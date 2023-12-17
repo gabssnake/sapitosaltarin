@@ -1,0 +1,293 @@
+:root {
+  --bg-blue: #b7e0ee;
+  --bg-green: #b0c26f;
+  --bg-bone: #F9FAF4;
+
+  --fg-bone: #fffdec;
+  --fg-blue: #547f94;
+  --fg-grey: #808285;
+
+  --title-blue: #65a8c3;
+  --title-green: #afc375;
+
+  --title-font: 'Merriweather Sans', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+
+  font-family: var(--body-font);
+  line-height: 1.5;
+
+  color: var(--fg-bone);
+  background-color: var(--bg-green);
+}
+
+main {
+  margin: 0 auto;
+  max-width: 30em;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.1;
+  margin: 1em 0 0;
+  text-shadow: 1px 1px hsla(0,0%,0%,.1);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fg-blue);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+
+
+
+
+/* LOGO */
+
+header {
+  color: var(--fg-bone);
+  background-color: var(--bg-blue);
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  padding: 6em 1em 2em;
+}
+
+.logo img {
+  width: 80%;
+  max-width: 24em;
+}
+
+
+
+
+
+/* NAVIGATION */
+
+header nav {
+  text-align: center;
+  position: relative;
+  top: 3em;
+}
+
+header nav ul {
+  list-style: none;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1.5em 2em;
+
+  background-color: #F4F1E6;
+  clip-path: polygon(3% 3%, 98% 8%, 97% 94%, 2% 98%);
+}
+
+header nav li {
+  display: inline-block;
+  margin: 0.3em 0.1em;
+}
+
+header nav a {
+  font-size: 1em;
+}
+
+.backdrop {
+  color: var(--fg-bone);
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px hsla(0,0%,0%,.2);
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  padding: 0.5em 1em;
+  margin: 0;
+}
+
+.backdrop::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.backdrop.nuestro-jardin::before {
+  background-color: #D7AB8B;
+  clip-path: polygon(3% 0, 100% 4%, 98% 92%, 0% 100%);
+}
+
+.backdrop.actividades::before {
+  background-color: #89B2D9;
+  clip-path: polygon(0 3%, 100% 0, 97% 99%, 1% 96%);
+}
+
+.backdrop.servicios::before {
+  background-color: #EAA6B3;
+  clip-path: polygon(0 0, 100% 4%, 94% 100%, 1% 100%);
+}
+
+.backdrop.quienes-somos::before {
+  background-color: #EFD796;
+  clip-path: polygon(1% 2%, 98% 0, 100% 100%, 0 98%);
+}
+
+
+
+
+
+/* GENERIC PAGE */
+
+main.page {
+  color: var(--fg-grey);
+  background-color: var(--bg-bone);
+
+  padding: 2em 2.5em;
+  margin-top: 7em;
+}
+
+main.page h1 {
+  position: absolute;
+  margin: -2em 0 0 -1em;
+  font-size: 2em;
+}
+
+main.page h2 {
+  font-size: 1.8em;
+  color: var(--title-blue);
+}
+
+main.page h3 {
+  font-size: 1.2em;
+  color: var(--title-green);
+}
+
+main.page li {
+  margin-bottom: 1em;
+}
+
+main.page dl::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main.page dt {
+  float: left;
+  padding-right: 1em;
+}
+
+main.page dt::after {
+  content: ":";
+}
+
+main.page dd {
+  margin: 0;
+}
+
+main.page .time-table dd {
+  text-align: right;
+}
+
+
+
+
+
+/* LANDING PAGE */
+
+
+main.landing {
+  color: var(--fg-bone);
+  background-color: var(--bg-green);
+  padding: 0em 1em;
+  margin-top: 4em;
+}
+
+main.landing a {
+  color: var(--fg-bone);
+}
+
+main.landing #overview {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+#overview nav {
+  flex-basis: 50%;
+  margin-bottom: 1em;
+  font-size: 0.9em;
+}
+
+#overview nav img {
+  width: 90%;
+}
+
+#overview nav h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
+#overview nav > a {
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+/* BIG SCREENS */
+
+
+@media (min-width: 30em) {
+  body {
+    font-size: 1.2em;
+  }
+
+  main.page {
+    border-radius: 0.5em;
+  }
+}
+
+
+@media (min-width: 60em) {
+  main {
+    max-width: 60em;
+  }
+
+  #overview nav {
+    flex-basis: 25%;
+  }
+}
+
