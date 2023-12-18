@@ -62,7 +62,55 @@ ul {
   list-style-position: inside;
 }
 
+dl::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
+dt {
+  float: left;
+  padding-right: 1em;
+}
+
+dt::after {
+  content: ":";
+}
+
+dd {
+  margin: 0;
+}
+
+.time-table dd {
+  text-align: right;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+  color: var(--fg-blue);
+  background-color: var(--bg-blue);
+  /*display: flex;
+  flex-direction: column;*/
+  margin-top: 3em;
+}
+
+footer section {
+  margin: 0 auto;
+  padding: 2em 2.5em;
+}
+
+footer h2 {
+  margin: 0 0 0.5em 0;
+  font-size: 2em;
+}
+
+footer dl {
+  margin: 0;
+}
 
 
 
@@ -162,12 +210,16 @@ header nav a {
 
 
 
+
+
+
+
+
 /* GENERIC PAGE */
 
 main.page {
   color: var(--fg-grey);
   background-color: var(--bg-bone);
-
   padding: 2em 2.5em;
   margin-top: 7em;
 }
@@ -192,28 +244,7 @@ main.page li {
   margin-bottom: 1em;
 }
 
-main.page dl::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
-main.page dt {
-  float: left;
-  padding-right: 1em;
-}
-
-main.page dt::after {
-  content: ":";
-}
-
-main.page dd {
-  margin: 0;
-}
-
-main.page .time-table dd {
-  text-align: right;
-}
 
 
 
@@ -282,7 +313,8 @@ main.landing #overview {
 
 
 @media (min-width: 60em) {
-  main {
+  main,
+  footer section {
     max-width: 60em;
   }
 
