@@ -10,8 +10,8 @@
   --title-blue: #65a8c3;
   --title-green: #afc375;
 
-  --title-font: 'Merriweather Sans', sans-serif;
-  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Merriweather Sans', 'Trebuchet MS', sans-serif;
+  --body-font: 'Open Sans', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', sans-serif;
 }
 
 html {
