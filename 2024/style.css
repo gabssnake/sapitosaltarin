@@ -191,6 +191,61 @@ footer dl {
 }
 
 
+/* CLOUDS */
+
+header {
+  position: relative;
+}
+
+.clouds {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cloud {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/header-cloud.svg");
+  width: 269px;
+  height: 74px;
+}
+
+.cloud:nth-child(1) {
+  transform: scale(1, 1);
+  margin-left: 9%;
+  top: 30%;
+}
+
+.cloud:nth-child(2) {
+  transform: scale(0.7, 0.7);
+  margin-left: 74%;
+  top: 74%;
+}
+
+.cloud:nth-child(3) {
+  transform: scale(0.6, 0.6);
+  margin-left: 53%;
+  top: 10%;
+}
+
+.cloud:nth-child(4) {
+  transform: scale(0.5, 0.5);
+  margin-left: -7%;
+  top: 64%;
+}
+
+.cloud:nth-child(5) {
+  transform: scale(0.4, 0.4);
+  margin-left: -3%;
+  top: 3%;
+}
+
+
 /* LANDING PAGE */
 
 main.landing {
