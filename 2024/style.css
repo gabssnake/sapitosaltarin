@@ -41,6 +41,10 @@ h1, h2, h3, h4, h5 {
   text-shadow: 1px 1px hsla(0,0%,0%,.1);
 }
 
+main p + p {
+  margin-top: 0;
+}
+
 img {
   width: 100%;
   max-width: 100%;
@@ -312,6 +316,24 @@ main.landing nav > a {
   display: block;
 }
 
+main.landing .prose {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 38rem;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 1px 1px hsla(0, 0%, 50%, .1);
+}
+
+main.landing .prose picture {
+  margin: 1rem auto -1.5rem;
+  max-width: 20rem;
+}
+
+
+
+
 
 
 
@@ -354,8 +376,8 @@ main article h3 {
 /* VERTICAL SPACING, COLORS, ETC */
 
 @media (min-width: 32em) {
-  body {
-    font-size: 1.1rem;
+  html {
+    font-size: 18px;
   }
 }
 
