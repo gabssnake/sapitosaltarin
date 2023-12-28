@@ -1,3 +1,9 @@
+
+
+/* ************************************************************* */
+/*                            GENERAL                            */
+/* ************************************************************* */
+
 :root {
   --bg-blue: #b7e0ee;
   --bg-green: #b0c26f;
@@ -20,8 +26,8 @@ html {
 
 body {
   margin: 0;
+  color: var(--fg-blue);
   background-color: var(--bg-blue);
-  color: var(--fg-bone);
   font-family: var(--body-font);
   line-height: 1.5;
 }
@@ -75,25 +81,95 @@ dd {
   margin: 0;
 }
 
-.time-table dd {
-  text-align: right;
-}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************* */
+/*                          HEADER                               */
+/* ************************************************************* */
+
+header {
+  position: relative;
+}
 
 /* LOGO */
 
-.logo {
+header picture {
   display: block;
   text-align: center;
   padding: 3em 2.5em 0em;
 }
 
-.logo img {
+header picture img {
   width: 90%;
   max-width: 20em;
   filter: drop-shadow(0 2px 100px #fff);
 }
 
+/* CLOUDS */
+
+.clouds {
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.cloud {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("img/header-cloud.svg");
+  opacity: 0.4;
+  width: 269px;
+  height: 74px;
+}
+
+.cloud:nth-child(1) {
+  transform: scale(1, 1);
+  margin-left: 9%;
+  top: 30%;
+}
+
+.cloud:nth-child(2) {
+  transform: scale(-0.7, 0.7);
+  margin-left: 74%;
+  top: 74%;
+}
+
+.cloud:nth-child(3) {
+  transform: scale(0.6, 0.6);
+  margin-left: 53%;
+  top: 10%;
+}
+
+.cloud:nth-child(4) {
+  transform: scale(0.5, 0.5);
+  margin-left: -7%;
+  top: 64%;
+}
+
+.cloud:nth-child(5) {
+  transform: scale(-0.4, 0.4);
+  margin-left: -3%;
+  top: 3%;
+}
 
 /* NAVIGATION */
 
@@ -121,29 +197,6 @@ header nav li {
 header nav a {
   font-size: 1em;
 }
-
-
-/* FOOTER */
-
-footer {
-  color: var(--fg-blue);
-}
-
-footer section {
-  padding-top: 2em;
-  padding-bottom: 4em;
-}
-
-footer h2 {
-  margin: 0;
-  margin-bottom: 0.5em;
-  font-size: 2em;
-}
-
-footer dl {
-  margin: 0;
-}
-
 
 /* BACKDROPS */
 
@@ -191,62 +244,23 @@ footer dl {
 }
 
 
-/* CLOUDS */
-
-header {
-  position: relative;
-}
-
-.clouds {
-  position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  overflow: hidden;
-  z-index: -1;
-}
-
-.cloud {
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-image: url("img/header-cloud.svg");
-  width: 269px;
-  height: 74px;
-}
-
-.cloud:nth-child(1) {
-  transform: scale(1, 1);
-  margin-left: 9%;
-  top: 30%;
-}
-
-.cloud:nth-child(2) {
-  transform: scale(-0.7, 0.7);
-  margin-left: 74%;
-  top: 74%;
-}
-
-.cloud:nth-child(3) {
-  transform: scale(0.6, 0.6);
-  margin-left: 53%;
-  top: 10%;
-}
-
-.cloud:nth-child(4) {
-  transform: scale(0.5, 0.5);
-  margin-left: -7%;
-  top: 64%;
-}
-
-.cloud:nth-child(5) {
-  transform: scale(-0.4, 0.4);
-  margin-left: -3%;
-  top: 3%;
-}
 
 
-/* LANDING PAGE */
+
+
+
+
+
+
+
+
+
+
+
+/* ************************************************************* */
+/*                          LANDING                              */
+/* ************************************************************* */
+
 
 main.landing {
   color: var(--fg-bone);
@@ -274,6 +288,16 @@ main.landing nav {
   font-size: 0.9em;
 }
 
+@media (min-width: 50em) {
+  main.landing section {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  main.landing nav {
+    flex-basis: 25%;
+  }
+}
+
 main.landing nav img {
   width: 85%;
 }
@@ -289,74 +313,90 @@ main.landing nav > a {
 }
 
 
-/* GENERIC PAGE */
 
-main.page {
-  color: var(--fg-grey);
-  background-color: var(--bg-bone);
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin-top: 7em;
-/*    border-radius: 0.5em;*/
-}
 
-main.page h1 {
+
+/* ************************************************************* */
+/*                          ARTICLE                              */
+/* ************************************************************* */
+
+main article h1 {
   margin: 0 auto;
   font-size: 2em;
-  /* float on top of main */
   position: relative;
-  top: -2em;
-/*  left: -1em;*/
+  top: -1em;
 }
 
-main.page h2 {
+main article h1 + section > h2 {
+  margin-top: 0;
+}
+
+main article h2 {
   font-size: 1.8em;
   color: var(--title-blue);
 }
 
-main.page h3 {
+main article h3 {
   font-size: 1.2em;
   color: var(--title-green);
 }
 
-main.page li {
-  margin-bottom: 1em;
+
+
+
+
+/* ************************************************************* */
+/*                          LAYOUT                               */
+/* ************************************************************* */
+
+
+/* VERTICAL SPACING, COLORS, ETC */
+
+@media (min-width: 32em) {
+  body {
+    font-size: 1.1em;
+  }
 }
 
+main {
+  color: var(--fg-bone);
+  background-color: var(--bg-green);
+  padding-top: 5em;
+  padding-bottom: 2em;
+}
 
-/* ADJUSTMENTS */
+main article {
+  color: var(--fg-grey);
+  background-color: var(--bg-bone);
+  border-radius: 0.5em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
-main section,
+main.landing section,
+main article,
+aside section,
 footer section {
   margin: 0 auto;
-  max-width: 30em;
+  max-width: 60em;
 }
 
-main,
-footer {
+main {
   padding-left: 1em;
   padding-right: 1em;
 }
 
-@media (min-width: 30em) {
-  body {
-    font-size: 1.2em;
-  }
-
-  main,
-  footer {
-    padding-left: 2.5em;
-    padding-right: 2.5em;
-  }
+main article {
+  padding-left: 2em;
+  padding-right: 2em;
 }
 
-@media (min-width: 60em) {
-  main section,
-  footer section {
-    max-width: 60em;
-  }
+aside,
+footer {
+  padding-left: 3em;
+  padding-right: 3em;
+}
 
-  main.landing nav {
-    flex-basis: 25%;
-  }
+footer {
+  padding-bottom: 3em;
 }
