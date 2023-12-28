@@ -222,7 +222,7 @@ header {
 }
 
 .cloud:nth-child(2) {
-  transform: scale(0.7, 0.7);
+  transform: scale(-0.7, 0.7);
   margin-left: 74%;
   top: 74%;
 }
@@ -240,7 +240,7 @@ header {
 }
 
 .cloud:nth-child(5) {
-  transform: scale(0.4, 0.4);
+  transform: scale(-0.4, 0.4);
   margin-left: -3%;
   top: 3%;
 }
