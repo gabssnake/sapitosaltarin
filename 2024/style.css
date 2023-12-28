@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
   font-style: italic;
   line-height: 1.1;
-  margin: 1em 0 0;
+  margin: 1rem 0 0;
   text-shadow: 1px 1px hsla(0,0%,0%,.1);
 }
 
@@ -70,7 +70,7 @@ dl::after {
 
 dt {
   float: left;
-  padding-right: 1em;
+  padding-right: 1rem;
 }
 
 dt::after {
@@ -111,12 +111,12 @@ header {
 header picture {
   display: block;
   text-align: center;
-  padding: 3em 2.5em 0em;
+  padding: 3rem 2.5rem 0rem;
 }
 
 header picture img {
   width: 90%;
-  max-width: 20em;
+  max-width: 20rem;
   filter: drop-shadow(0 2px 100px #fff);
 }
 
@@ -177,25 +177,25 @@ header nav {
   text-align: center;
   /* float on top of main */
   position: relative;
-  top: 3em;
+  top: 3rem;
 }
 
 header nav ul {
   list-style: none;
   display: inline-block;
   margin: 0 auto;
-  padding: 1.2em 2.2em;
+  padding: 1.2rem 2.2rem;
   background-color: #F4F1E6;
   clip-path: polygon(3% 3%, 98% 8%, 97% 94%, 2% 98%);
 }
 
 header nav li {
   display: inline-block;
-  margin: 0.3em 0.1em;
+  margin: 0.3rem 0.1rem;
 }
 
 header nav a {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 /* BACKDROPS */
@@ -209,7 +209,7 @@ header nav a {
   position: relative;
   z-index: 1;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
   margin: 0;
 }
 
@@ -265,8 +265,8 @@ header nav a {
 main.landing {
   color: var(--fg-bone);
   background-color: var(--bg-green);
-  padding-top: 4em;
-  padding-bottom: 2em;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 main.landing a {
@@ -284,14 +284,14 @@ main.landing section {
 
 main.landing nav {
   flex-basis: 50%;
-  margin-bottom: 1em;
-  font-size: 0.9em;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
 }
 
 @media (min-width: 50em) {
   main.landing section {
-    padding-left: 2em;
-    padding-right: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   main.landing nav {
     flex-basis: 25%;
@@ -303,9 +303,9 @@ main.landing nav img {
 }
 
 main.landing nav h2 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-top: 0;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.3rem;
 }
 
 main.landing nav > a {
@@ -320,24 +320,25 @@ main.landing nav > a {
 /*                          ARTICLE                              */
 /* ************************************************************* */
 
-main article h1 {
-  margin: 0 auto;
-  font-size: 2em;
+main h1.backdrop {
+  font-size: 2rem;
+  padding: 1.2rem 2rem;
   position: relative;
-  top: -1em;
+  top: -2.5rem;
+  left: -1.5rem;
 }
 
-main article h1 + section > h2 {
+main h1 + section > h2 {
   margin-top: 0;
 }
 
 main article h2 {
-  font-size: 1.8em;
+  font-size: 1.8rem;
   color: var(--title-blue);
 }
 
 main article h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   color: var(--title-green);
 }
 
@@ -354,23 +355,23 @@ main article h3 {
 
 @media (min-width: 32em) {
   body {
-    font-size: 1.1em;
+    font-size: 1.1rem;
   }
 }
 
 main {
   color: var(--fg-bone);
   background-color: var(--bg-green);
-  padding-top: 5em;
-  padding-bottom: 2em;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
 }
 
 main article {
   color: var(--fg-grey);
   background-color: var(--bg-bone);
-  border-radius: 0.5em;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  border-radius: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 main.landing section,
@@ -378,27 +379,27 @@ main article,
 aside section,
 footer section {
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 60rem;
 }
 
 main {
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 main article {
-  padding-left: 2em;
-  padding-right: 2em;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 aside,
 footer {
-  padding-left: 3em;
-  padding-right: 3em;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 footer {
-  padding-bottom: 3em;
+  padding-bottom: 3rem;
 }
 
 footer a {
