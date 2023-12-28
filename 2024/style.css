@@ -400,3 +400,8 @@ footer {
 footer {
   padding-bottom: 3em;
 }
+
+footer a {
+  font-weight: bold;
+  text-decoration: underline;
+}
