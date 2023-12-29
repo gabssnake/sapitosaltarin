@@ -377,6 +377,42 @@ main article h3 {
 
 
 
+/* ************************************************************* */
+/*                       ASIDE & FOOTER                          */
+/* ************************************************************* */
+
+aside {
+  padding-top: 2rem;
+/*  padding-bottom: 2rem;*/
+}
+
+aside h1, footer h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+aside article img {
+  max-width: 25rem;
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+  float: left;
+}
+
+aside article::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  padding-bottom: 3rem;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 
 /* ************************************************************* */
@@ -409,7 +445,7 @@ main article {
 
 main.landing section,
 main article,
-aside section,
+aside article,
 footer section {
   margin: 0 auto;
   max-width: 60rem;
@@ -429,13 +465,4 @@ aside,
 footer {
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-footer {
-  padding-bottom: 3rem;
-}
-
-footer a {
-  font-weight: bold;
-  text-decoration: underline;
 }
