@@ -331,7 +331,18 @@ main.landing .prose picture {
   max-width: 20rem;
 }
 
+main.landing .credentials {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  mix-blend-mode: multiply;
+}
 
+main.landing .credentials img {
+  flex-basis: 15%;
+  max-width: 6rem;
+  margin: 0.5rem 0.5rem;
+}
 
 
 
