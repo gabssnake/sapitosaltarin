@@ -98,7 +98,7 @@ header {
 header picture {
   display: block;
   text-align: center;
-  padding: 3rem 2.5rem 0rem;
+  padding: 7rem 2.5rem 2rem;
 }
 
 header picture img {
@@ -123,40 +123,40 @@ header picture img {
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url("img/header-cloud.svg");
-  opacity: 0.4;
   width: 269px;
   height: 74px;
 }
 
 .cloud:nth-child(1) {
-  transform: scale(1, 1);
-  margin-left: 9%;
-  top: 30%;
+  transform: scale(-0.4, 0.4);
+  top: 3%;
+  margin-left: -9%;
 }
 
 .cloud:nth-child(2) {
-  transform: scale(-0.7, 0.7);
-  margin-left: 74%;
-  top: 74%;
+  transform: scale(0.6, 0.6);
+  top: 10%;
+  margin-left: 53%;
 }
 
 .cloud:nth-child(3) {
-  transform: scale(0.6, 0.6);
-  margin-left: 53%;
-  top: 10%;
+  transform: scale(1, 1);
+  top: 26%;
+  margin-left: 5%;
 }
 
 .cloud:nth-child(4) {
-  transform: scale(0.5, 0.5);
-  margin-left: -7%;
-  top: 64%;
+  transform: scale(-0.7, 0.7);
+  top: 52%;
+  margin-left: 76%;
 }
 
 .cloud:nth-child(5) {
-  transform: scale(-0.4, 0.4);
-  margin-left: -3%;
-  top: 3%;
+  transform: scale(0.5, 0.5);
+  top: 61%;
+  margin-left: 9%;
 }
+
 
 /* NAVIGATION */
 
