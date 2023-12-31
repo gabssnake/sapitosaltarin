@@ -303,7 +303,7 @@ main.landing .prose picture {
 }
 
 main.landing .credentials {
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
   display: flex;
   justify-content: space-around;
   mix-blend-mode: multiply;
@@ -401,7 +401,6 @@ main {
   color: var(--fg-bone);
   background-color: var(--bg-green);
   padding-top: 5rem;
-  padding-bottom: 2rem;
 }
 
 main article {
@@ -460,7 +459,6 @@ aside {
 
   background-image: url("img/ornament-shoreline-2.svg");
   background-size: 1739px 210px;
-  margin-top: -60px;
   padding-top: 100px;
   min-height: 210px;
 }
