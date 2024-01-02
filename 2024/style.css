@@ -22,6 +22,12 @@ html {
   font-size: 16px;
 }
 
+@media (min-width: 32em) {
+  html {
+    font-size: 18px;
+  }
+}
+
 body {
   margin: 0;
   color: var(--fg-blue);
@@ -162,9 +168,6 @@ header picture img {
 
 header nav {
   text-align: center;
-  /* float on top of main */
-  position: relative;
-  top: 3rem;
 }
 
 header nav ul {
@@ -185,6 +188,42 @@ header nav a {
   font-size: 1rem;
 }
 
+/* KIDS HOLDING */
+
+@media (min-width: 55em) {
+  header picture,
+  header nav {
+    z-index: 2;
+  }
+
+  header nav::before,
+  header nav::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    z-index: 1;
+    width: 140px;
+    margin-left: -65px;
+  }
+
+  header nav::before {
+    height: 140px;
+    margin-top: -10px;
+    background-image: url('img/header-nav-kid-left.svg');
+  }
+
+  header nav::after {
+    height: 115px;
+    margin-top: 10px;
+    background-image: url('img/header-nav-kid-right.svg');
+  }
+}
+
+
 /* BACKDROPS */
 
 .backdrop {
@@ -202,6 +241,7 @@ header nav a {
 
 .backdrop::before {
   content: "";
+  pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -236,12 +276,10 @@ header nav a {
 /*                          LANDING                              */
 /* ************************************************************* */
 
-
 main.landing {
   color: var(--fg-bone);
   background-color: var(--bg-green);
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 main.landing a {
@@ -321,6 +359,10 @@ main.landing .credentials img {
 /*                          ARTICLE                              */
 /* ************************************************************* */
 
+main.page {
+  padding-top: 5rem;
+}
+
 main h1.backdrop {
   font-size: 2rem;
   padding: 1.2rem 2rem;
@@ -391,23 +433,15 @@ footer a {
 
 /* VERTICAL SPACING, COLORS, ETC */
 
-@media (min-width: 32em) {
-  html {
-    font-size: 18px;
-  }
-}
-
 main {
   color: var(--fg-bone);
   background-color: var(--bg-green);
-  padding-top: 5rem;
 }
 
 main article {
   color: var(--fg-grey);
   background-color: var(--bg-bone);
   border-radius: 0.5rem;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -442,37 +476,26 @@ footer {
 /* ************************************************************* */
 
 header {
-  background-image: url("img/ornament-skyline.svg");
+  background-image: url("img/ornament-skyline-2.svg");
   background-size: 1737px 295px;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  background-position: 60% bottom;
   background-repeat: repeat-x;
 }
 
 aside {
-  background-position: top center;
-  background-repeat: repeat-x;
-
-  background-image: url("img/ornament-shoreline-1.svg");
-  background-size: 1739px 128px;
-  padding-top: 100px;
-
   background-image: url("img/ornament-shoreline-2.svg");
   background-size: 1739px 210px;
+  background-position: center top;
+  background-repeat: repeat-x;
   padding-top: 100px;
   min-height: 210px;
 }
 
 footer {
-  background-position: top center;
-  background-repeat: repeat-x;
-
-  background-image: url("img/ornament-surfaceline-1.svg");
-  background-size: 1739px 400px;
-  padding-top: 60px;
-
   background-image: url("img/ornament-surfaceline-2.svg");
   background-size: 1739px 682px;
+  background-position: center top;
+  background-repeat: repeat-x;
   margin-top: -35px;
   padding-top: 220px;
   min-height: 420px;
