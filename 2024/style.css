@@ -166,14 +166,19 @@ header picture img {
 
 /* NAVIGATION */
 
-header nav {
+header {
   text-align: center;
+}
+
+header nav {
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 header nav ul {
   list-style: none;
-  display: inline-block;
-  margin: 0 auto;
   padding: 1.2rem 2.2rem;
   background-color: #F4F1E6;
   clip-path: polygon(3% 3%, 98% 8%, 97% 94%, 2% 98%);
@@ -191,34 +196,31 @@ header nav a {
 /* KIDS HOLDING */
 
 @media (min-width: 55em) {
-  header picture,
-  header nav {
-    z-index: 2;
-  }
-
   header nav::before,
   header nav::after {
     content: "";
-    pointer-events: none;
     position: absolute;
+    z-index: 1;
+    pointer-events: none;
     display: inline-block;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
-    z-index: 1;
-    width: 140px;
-    margin-left: -65px;
   }
 
   header nav::before {
+    width: 140px;
     height: 140px;
-    margin-top: -10px;
+    left: -60px;
+    top: -10px;
     background-image: url('img/header-nav-kid-left.svg');
   }
 
   header nav::after {
+    width: 140px;
     height: 115px;
-    margin-top: 10px;
+    right: -70px;
+    top: 5px;
     background-image: url('img/header-nav-kid-right.svg');
   }
 }
