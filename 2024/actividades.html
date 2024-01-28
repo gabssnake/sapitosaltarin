@@ -21,6 +21,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+
+  <script type="module">
+    import { Lightbox } from './lightbox.js'
+    window.addEventListener('load', Lightbox('.thumbnails img'))
+  </script>
 </head>
 
 <body>
@@ -57,11 +62,25 @@
       <section id="natacion">
         <h2>Natación</h2>
 
+        <ul class="thumbnails">
+          <li><img src="./pictures/actividades-natacion-01.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-natacion-02.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-natacion-03.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-natacion-04.jpg" width="300px" /></li>
+        </ul>
+
         <p>Estas clases tienen por objetivo desarrollar habilidades motoras  fundamentales en el desarrollo de los niños, fomentar su independencia y a cultivar su autoconfianza. Es una disciplina muy completa, relajante, y estimulante.</p>
       </section>
 
       <section id="taller-artistico">
         <h2>Taller artístico</h2>
+
+        <ul class="thumbnails">
+          <li><img src="./pictures/actividades-artisticas-01.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-artisticas-02.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-artisticas-03.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-artisticas-04.jpg" width="300px" /></li>
+        </ul>
 
         <p>El hombre aprende a través de los sentidos, se dice que entre más sentidos intervengan en el proceso de enseñanza-aprendizaje más fácil se logra la aprehensión de los conocimientos y más rápidamente se establece la interacción entre el sujeto y el medio ambiente por eso la Educación Artística tiene la misión de desarrollar aquellas sensaciones y posibilidades creadoras que le dan al acto de vivir el significado indispensable para la realización y satisfacción personal.</p>
 
@@ -73,15 +92,20 @@
       <section id="salidas-pedagogicas">
         <h2>Salidas pedagógicas</h2>
 
+        <ul class="thumbnails">
+          <li><img src="./pictures/actividades-salidas-01.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-salidas-02.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-salidas-03.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-salidas-04.jpg" width="300px" /></li>
+        </ul>
+
         <p>Con las salidas pedagógicas, que se realizan una vez al mes, se busca generar una experiencia enriquecedora para los niños. Algunos de los sitios visitados son el Museo de los Niños, la Granja Fanáuticos, el Parque Simón Bolivar, el Parque Chicó y la Virgilio Barco. Algunos de los objetivos, según la actividad:</p>
 
         <p>Algunos de los objetivos, según la actividad:</p>
 
         <ul>
           <li>Desarrollar la motricidad gruesa en un espacio apropiado, donde los niños disfrutan al aire libre y de la naturaleza.</li>
-
           <li>Permitirles desarrollar conceptos básicos a través del juego y la interacción con el medio ambiente.</li>
-
           <li>Despertar el gusto por la lectura y generar en ellos el hábito de leer y el respeto por los espacios que son creados para su desarrollo cognitivo y socio-afectivo.</li>
         </ul>
       </section>
@@ -89,17 +113,32 @@
       <section id="clases-de-ingles">
         <h2>Clases de inglés</h2>
 
+       <ul class="thumbnails">
+          <li><img src="./pictures/actividades-ingles-01.jpg" width="300px" /></li>
+        </ul>
+
         <p>El programa de ingles para los niños y niñas de preescolar, a partir de los 3 años, esta basado en la necesidad de aprender ingles desde la temprana edad, dependiendo de cada nivel. La metodología se relaciona con su entorno usando: saludos, objetos del salón y la casa, canciones, cuentos cortos, normas de cortesía, entre otros.</p>
       </section>
 
       <section id="vacaciones-recreativas">
         <h2>Vacaciones recreativas</h2>
 
+        <ul class="thumbnails">
+          <li><img src="./pictures/actividades-vacaciones-01.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-vacaciones-02.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-vacaciones-03.jpg" width="300px" /></li>
+          <li><img src="./pictures/actividades-vacaciones-04.jpg" width="300px" /></li>
+        </ul>
+
         <p>El Sapito Saltarín presta el servicio de vacaciones recreativas, a mitad de año y a final de año. Durante estos periodos el jardín ofrece horarios de jornada completa, flexibles y adaptables para los papas. En estos espacios, el niño puede vivenciar actividades lúdicas que lo motivan a expresar, compartir, explorar nuevas experiencias a través del medio artístico.</p>
       </section>
 
       <section id="otras-actividades">
         <h2>Otras actividades</h2>
+
+       <ul class="thumbnails">
+          <li><img src="./pictures/actividades-otras-01.jpg" width="300px" /></li>
+        </ul>
 
         <p>Muchas otras actividades para que los niños puedan explorar, expresarse, compartir, aprender nuevas habilidades, y aplicar lo aprendido en el Jardín de formas creativas y nuevas.</p>
       </section>
