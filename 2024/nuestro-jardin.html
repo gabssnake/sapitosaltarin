@@ -21,6 +21,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+
+  <script type="module">
+    import { Lightbox } from './lightbox.js'
+    window.addEventListener('load', Lightbox('.thumbnails img'))
+  </script>
 </head>
 
 <body>
@@ -56,6 +61,16 @@
 
       <section id="instalaciones">
         <h2>Instalaciones</h2>
+
+        <ul class="thumbnails">
+          <li><img src="./pictures/nuestro-jardin-instalaciones-01.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-02.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-03.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-04.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-05.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-06.jpg" width="300px" /></li>
+          <li><img src="./pictures/nuestro-jardin-instalaciones-07.jpg" width="300px" /></li>
+        </ul>
 
         <p>El Sapito Saltarín cuenta con ambientes adecuados, cómodos y seguros cumpliendo con el programa trazado por los estándares de calidad de la secretaría de integración social.</p>
 
